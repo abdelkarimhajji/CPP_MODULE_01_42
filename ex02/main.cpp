@@ -5,21 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 16:47:38 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/20 14:04:24 by ahajji           ###   ########.fr       */
+/*   Created: 2023/11/20 14:12:09 by ahajji            #+#    #+#             */
+/*   Updated: 2023/11/20 15:23:00 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
 int main( void )
 {
-    Zombie zombie;
-    Zombie *arrZombie;
+    std::string str = "HI THIS IS BRAIN";
+    std::string *stringPTR = &str;
+    std::string &stringREF = str;
+
+    // print address memory 
+    std::cout << &str << std::endl;
+    std::cout << stringPTR << std::endl;
+    std::cout << &stringREF << std::endl;
+    // print values
+    std::cout << str << std::endl;
+    std::cout << *stringPTR << std::endl;
+    std::cout << stringREF << std::endl;
     
-    
-    arrZombie = zombie.zombieHorde(5, "hiii");
-    zombie.announce();
-    arrZombie[0].announce();
     return 0;
 }
