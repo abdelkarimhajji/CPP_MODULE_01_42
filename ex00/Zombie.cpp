@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 12:04:29 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/19 15:41:17 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/20 11:14:56 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,4 @@ void Zombie::randomChump( std::string name )
     Zombie createZombie(name);
     createZombie.announce();
 }
+
