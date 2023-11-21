@@ -6,7 +6,15 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:34:02 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/20 15:34:03 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/21 11:10:06 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "HumanA.hpp"
+
+int main( void )
+{
+    HumanA humana("karim");
+    humana.attack();
+    return 0;   
+}

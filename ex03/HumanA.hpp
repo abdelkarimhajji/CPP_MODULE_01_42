@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 15:34:54 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/21 11:05:09 by ahajji           ###   ########.fr       */
+/*   Created: 2023/11/21 10:23:48 by ahajji            #+#    #+#             */
+/*   Updated: 2023/11/21 11:10:40 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "Weapon.hpp"
 
-class Weapon
+class HumanA
 {
     private:
-        std::string type;
+        Weapon weapon;
+        std::string name;
     public:
-        Weapon();
-        const std::string   getType();
-        void    setType(std::string type);
+        HumanA();
+        HumanA(std::string name);
+        void    attack();
 };
