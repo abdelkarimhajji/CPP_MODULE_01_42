@@ -6,21 +6,18 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 10:28:11 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/21 11:09:48 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/22 12:36:19 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA()
-{
-    
-};
 
-HumanA::HumanA(std::string name)
+HumanA::HumanA(std::string name, Weapon& weapon):weapon(weapon)
 {
     this->name = name;
 };
+
 
 void    HumanA::attack()
 {

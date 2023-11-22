@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:34:52 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/21 11:02:31 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/22 12:14:55 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 Weapon::Weapon()
 {
-    this->type = "c1";
+    
+};
+
+Weapon::Weapon(std::string type)
+{
+    this->type = type;
 };
 
 const std::string   Weapon::getType()
