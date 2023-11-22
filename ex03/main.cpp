@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: ahajji <ahajji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:34:02 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/22 15:25:46 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/22 18:20:06 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main( void )
     // club.setType("some other type of club");
     // bob.attack();
 
-    Weapon club = Weapon("crude spiked club");
+    Weapon club = Weapon("sla7 nadi");
     HumanB jim("Jim");
     jim.setWeapon(&club);
     jim.attack();
