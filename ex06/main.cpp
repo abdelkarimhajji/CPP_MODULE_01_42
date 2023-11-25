@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 09:14:06 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 13:56:17 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/25 14:50:37 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,14 @@ void    test()
 {
     std::cout << "hiii\n";
 }
-int main( void )
+int main(int ac, char **av)
 {
-    Harl test;
-    test.complain("info");
-    
+    if(ac == 2)
+    {
+        Harl test;
+        test.complain(av[1]);
+    }
+    else
+        std::cout << "Error in arg" << std::endl;
     return 0;
 }

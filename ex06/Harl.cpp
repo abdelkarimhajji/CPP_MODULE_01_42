@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 11:13:06 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 13:58:27 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/25 14:48:09 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void    Harl::debug( void )
 {
- std::cout << " \"DEBUG\" level: Debug messages contain contextual information. They are mostly\nused for problem diagnosis.\nExample: \"I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!\"";
+ std::cout << " \"DEBUG\" level: Debug messages contain contextual information. They are mostly\nused for problem diagnosis.\nExample: \"I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!\"\n";
 
 }
 
@@ -49,4 +49,6 @@ void Harl::complain( std::string level )
         }
         i++;
     }
+    if(valid == 0)
+        std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }
