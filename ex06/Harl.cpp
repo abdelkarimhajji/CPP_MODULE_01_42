@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 11:13:06 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 13:59:42 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/25 13:58:27 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,14 @@ void Harl::complain( std::string level )
     void(Harl::*ptr[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
     std::string arry[] = {"debug", "info", "warning", "error"};
     int i = 0;
+    int valid = 0;
     while (i < 4)
     {
-        if(level == arry[i])
+        if(level == arry[i] || valid == 1)
         {
             (this->*ptr[i])();
-            break;
+            valid = 1;
+            std::cout << "\n";
         }
         i++;
     }
