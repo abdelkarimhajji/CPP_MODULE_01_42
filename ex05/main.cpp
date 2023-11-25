@@ -5,18 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 11:59:52 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 12:31:21 by ahajji           ###   ########.fr       */
+/*   Created: 2023/11/25 09:14:06 by ahajji            #+#    #+#             */
+/*   Updated: 2023/11/25 13:50:36 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-int main(void)
+void    test()
 {
-    Zombie newZombie;
-
-    //  newZombie.announce();
-    newZombie.randomChump("karim");
-    return (0);   
+    std::cout << "hiii\n";
+}
+int main( void )
+{
+    Harl test;
+    test.complain("error");
+    
+    return 0;
 }

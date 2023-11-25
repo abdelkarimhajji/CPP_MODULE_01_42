@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 11:59:52 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 12:31:21 by ahajji           ###   ########.fr       */
+/*   Created: 2023/11/25 11:08:06 by ahajji            #+#    #+#             */
+/*   Updated: 2023/11/25 11:11:26 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-int main(void)
+class Harl
 {
-    Zombie newZombie;
-
-    //  newZombie.announce();
-    newZombie.randomChump("karim");
-    return (0);   
-}
+    private:
+        void debug( void );
+        void info( void );
+        void warning( void );
+        void error( void );
+    public:
+        void complain( std::string level );      
+};
