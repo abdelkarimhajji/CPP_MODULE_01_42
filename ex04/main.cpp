@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 18:49:38 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/26 18:17:35 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/26 20:46:57 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ void    writeInsideFolderRplace(std::string fileName, std::string s1, std::strin
         Myfile2.close();
         Myfile.close();
     }
+    else
+        std::cout << "File doesn't exist" << std::endl;
 }
 
 int main(int ac, char **av)
