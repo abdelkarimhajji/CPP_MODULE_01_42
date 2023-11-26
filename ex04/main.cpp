@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: ahajji <ahajji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 18:49:38 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/26 15:54:30 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/26 18:17:35 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ void    writeInsideFolderRplace(std::string fileName, std::string s1, std::strin
 {
     std::string line;
     std::string str;
-     std::string str2;
+    std::string str2;
     size_t pos;
-    unsigned int count = 0;
-    unsigned int i = 0;
     
     std::ifstream Myfile(fileName);
     if(Myfile.is_open())
@@ -33,27 +31,13 @@ void    writeInsideFolderRplace(std::string fileName, std::string s1, std::strin
             if(!Myfile.eof())
                 str += '\n';
         }
-        str2 = str;
-        while (i < str2.length())
+        pos = str.find(s1);
+
+        while (pos < str.length())
         {
-            pos = str2.find(s1);
-            if(pos <= str2.length())
-            {
-                str2.erase(pos, s1.length());
-                count++;
-            }
-            i++;
-        }
-        i = 0;
-        while (i < count)
-        {
-            pos = str.find(s1);
-            if(pos <= str.length())
-            {
-                str.erase(pos, s1.length());
-                str.insert(pos, s2);
-            }
-            i += s2.length() + 1;
+            str.erase(pos, s1.length());
+            str.insert(pos, s2);
+            pos = str.find(s1, pos + s2.length()); 
         }
         Myfile2 << str;
         Myfile2.close();
@@ -64,7 +48,10 @@ void    writeInsideFolderRplace(std::string fileName, std::string s1, std::strin
 int main(int ac, char **av)
 {
     if (ac != 4)
+    {
+        std::cout << "Error args" << std::endl;
         return 1;
+    }
     else
         writeInsideFolderRplace(av[1], av[2], av[3]);
     return 0;
