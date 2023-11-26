@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 12:04:29 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 12:33:05 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/26 12:59:55 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie( void )
 {
-    
+    this->name = "default";
 }
 
 Zombie::Zombie(std::string name)
@@ -22,19 +22,12 @@ Zombie::Zombie(std::string name)
     this->name = name;
 }
 
+Zombie::~Zombie()
+{
+    std::cout << "Zombie " << this->name << " is destroyed\n";
+}
+
 void Zombie::announce( void )
 {
     std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
-
-Zombie* Zombie::newZombie( std::string name )
-{
-    Zombie  *createZombie = new Zombie(name);
-    return createZombie;
-}
-void Zombie::randomChump( std::string name )
-{
-    Zombie createZombie(name);
-    createZombie.announce();
-}
-

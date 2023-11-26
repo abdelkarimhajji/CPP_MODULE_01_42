@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 11:59:52 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/25 12:31:21 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/26 14:35:54 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 int main(void)
 {
-    Zombie newZombie;
-
-    //  newZombie.announce();
-    newZombie.randomChump("karim");
-    return (0);   
+    Zombie  *dynamicZombi = newZombie("jihad");
+    dynamicZombi->announce();
+    randomChump("karim");
+    
+    delete dynamicZombi;
+    return (0);
 }

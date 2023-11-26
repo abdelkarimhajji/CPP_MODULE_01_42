@@ -6,7 +6,7 @@
 /*   By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 18:49:38 by ahajji            #+#    #+#             */
-/*   Updated: 2023/11/24 17:06:34 by ahajji           ###   ########.fr       */
+/*   Updated: 2023/11/26 10:54:06 by ahajji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void    writeInsideFolderRplace(std::string fileName, std::string s1, std::strin
                 str.erase(pos, s1.length());
                 str.insert(pos, s2);
             }
-            i += s2.length();
+            i +=s2.length();
         }
         Myfile2 << str;
     }

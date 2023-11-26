@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ahajji <ahajji@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/26 14:56:33 by ahajji            #+#    #+#              #
-#    Updated: 2023/11/26 14:57:17 by ahajji           ###   ########.fr        #
+#    Created: 2023/11/26 15:27:37 by ahajji            #+#    #+#              #
+#    Updated: 2023/11/26 15:27:46 by ahajji           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = braniz
+NAME = Harl
 
-SRC = main.cpp  Zombie.cpp zombieHorde.cpp
+SRC = main.cpp Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
 CPP = c++
